@@ -15,7 +15,7 @@ class FlappyBirdGame extends FlameGame with HasTappables {
 
     add(BackgroundComponent());
 
-    add(PlayerComponent());
+    add(PlayerComponent(button: Button()));
 
     button
       ..sprite = await loadSprite(Global.buttonSprite)
