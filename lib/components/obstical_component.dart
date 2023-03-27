@@ -1,10 +1,5 @@
-import 'dart:math';
-import 'package:flame/flame.dart';
 import 'package:flame/components.dart';
-import 'package:flame/extensions.dart';
-import 'package:flame_dgs_assigment/constants/globals.dart';
 import 'package:flame_dgs_assigment/game/flappy_bird_game.dart';
-import 'package:flutter/material.dart';
 
 class Item extends SpriteComponent with HasGameRef<FlappyBirdGame> {
   static const double itemSpeed = 300;

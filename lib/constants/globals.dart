@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 class Global {
   Global._();
 
@@ -7,6 +5,6 @@ class Global {
   static const String playerSprite = 'Player.png';
   static const String obsticleSprite = 'obsticle.png';
   static const String spriteSheet = 'spritesheet.png';
-  static const String itemSprite = '';
+  static const String itemSprite = 'Corn.png';
   static const double scoreBarHeight = 0.0;
 }
