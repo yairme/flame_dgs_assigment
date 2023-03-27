@@ -1,7 +1,6 @@
 import 'package:flame/components.dart';
-import 'package:flame_dgs_assigment/animations/player_animation.dart';
 import 'package:flame_dgs_assigment/constants/globals.dart';
-import 'package:flame_dgs_assigment/games/flappy_bird_game.dart';
+import 'package:flame_dgs_assigment/game/flappy_bird_game.dart';
 import 'package:flutter/widgets.dart';
 
 class PlayerComponent extends SpriteComponent with HasGameRef<FlappyBirdGame> {
@@ -14,8 +13,6 @@ class PlayerComponent extends SpriteComponent with HasGameRef<FlappyBirdGame> {
   late double _downBound;
 
   JoystickComponent joystick;
-  SpriteAnimationComponent animation = SpriteAnimationComponent();
-  PlayerAnimation playerAnimationData = PlayerAnimation();
 
   PlayerComponent({required this.joystick});
 
@@ -33,14 +30,6 @@ class PlayerComponent extends SpriteComponent with HasGameRef<FlappyBirdGame> {
     position = gameRef.size / 2;
     height = _spriteHeight;
     width = _spriteHeight * 1.45;
-    anchor = Anchor.center;
-
-    var spriteSheet = await gameRef.images.load(Global.spriteSheet);
-
-    animation = SpriteAnimationComponent.fromFrameData(
-        spriteSheet, playerAnimationData.spritedata)
-      ..x = 250
-      ..y = 350;
   }
 
   @override
