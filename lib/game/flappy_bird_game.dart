@@ -13,6 +13,7 @@ import 'package:flutter/material.dart';
 import '../BloC/flappy_bird_bloc.dart';
 import '../screens/game_over_menu.dart';
 
+/// A class representing the main game logic and components of the Flappy Bird game.
 class FlappyBirdGame extends FlameGame
     with HasDraggables, HasCollisionDetection {
   late PlayerComponent player = PlayerComponent(joystick: joystick);
@@ -26,6 +27,7 @@ class FlappyBirdGame extends FlameGame
 
   int score = 0;
 
+  /// Called when the game is loaded.
   @override
   Future<void> onLoad() async {
     await super.onLoad();
@@ -39,18 +41,22 @@ class FlappyBirdGame extends FlameGame
 
     add(joystick);
 
+    // Load sounds used in the game
     FlameAudio.audioCache.loadAll([
       Global.itemGrabSound,
       Global.obsticleHitSound,
     ]);
 
+    // Add obstacles to the game
     add(ObsticleComponent(startPosition: Vector2(200, 200)));
     add(ObsticleComponent(startPosition: Vector2(size.x - 200, size.y - 200)));
 
     add(ScreenHitbox());
 
+    // Set up game logic using the FlappyBirdBloc class
     gameBloc = FlappyBirdBloc();
 
+    // Set up score text
     _scoreText = TextComponent(
       text: 'Score: ${gameBloc.state.score}',
       position: Vector2(40, 40),
@@ -62,9 +68,9 @@ class FlappyBirdGame extends FlameGame
         ),
       ),
     );
-
     add(_scoreText);
 
+    // Set up remaining time text
     _timeText = TextComponent(
       text: 'Time: ${gameBloc.state.remainingTime} seconds',
       position: Vector2(size.x - 40, 40),
@@ -76,14 +82,16 @@ class FlappyBirdGame extends FlameGame
         ),
       ),
     );
-
     add(_timeText);
 
+    // Listen to changes in game state and update UI accordingly
     gameBloc.stream.listen((state) {
       score = state.score;
       _scoreText.text = 'Score: ${state.score}';
       _timeText.text = 'Time: ${state.remainingTime} seconds';
 
+      // If game is over, pause the engine, stop background music, play game over sound effect,
+      // and show the game over menu overlay.
       if (state.isGameOver) {
         pauseEngine();
         FlameAudio.bgm.stop();
@@ -93,6 +101,7 @@ class FlappyBirdGame extends FlameGame
       }
     });
 
+    // Start the game by adding a StartGameEvent to the game
     gameBloc.add(StartGameEvent());
   }
 }

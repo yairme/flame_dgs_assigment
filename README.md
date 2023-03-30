@@ -1,16 +1,23 @@
 # flame_dgs_assigment
 
-A new Flutter project.
+## Overview
+This is a Flutter project for an assignment that uses the Flame game engine to create a Flappy Bird game.
 
 ## Getting Started
+To run the project, follow these steps:
 
-This project is a starting point for a Flutter application.
+1. Clone the project to your local machine using the command `git clone https://github.com/your-username/flame_dgs_assigment.git`.
+2. Open the project in your preferred code editor.
+3. Run `flutter packages get` to install the required packages.
+4. Run `flutter run` to launch the app on your device or emulator.
 
-A few resources to get you started if this is your first Flutter project:
+## Resources
+Here are some resources to help you get started with Flutter:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Flutter documentation](https://flutter.dev/docs)
+- [Flutter cookbook](https://flutter.dev/docs/cookbook)
+- [Flutter YouTube channel](https://www.youtube.com/channel/UCwXdFgeE9KYzlDdR7TG9cMw)
+- [Flame documentation](https://flame-engine.org/docs)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Contributing
+Contributions to the project are welcome. If you find any issues or would like to add a feature, please submit a pull request.
