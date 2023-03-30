@@ -1,0 +1,164 @@
+---
+frames:
+  Frame_ (1).png:
+    frame:
+      x: 0
+      y: 0
+      w: 150
+      h: 163
+    rotated: false
+    trimmed: false
+    spriteSourceSize:
+      x: 0
+      y: 0
+      w: 150
+      h: 163
+    sourceSize:
+      w: 150
+      h: 163
+    pivot:
+      x: 0.5
+      y: 0.5
+  Frame_ (2).png:
+    frame:
+      x: 150
+      y: 0
+      w: 150
+      h: 163
+    rotated: false
+    trimmed: false
+    spriteSourceSize:
+      x: 0
+      y: 0
+      w: 150
+      h: 163
+    sourceSize:
+      w: 150
+      h: 163
+    pivot:
+      x: 0.5
+      y: 0.5
+  Frame_ (3).png:
+    frame:
+      x: 300
+      y: 0
+      w: 150
+      h: 163
+    rotated: false
+    trimmed: false
+    spriteSourceSize:
+      x: 0
+      y: 0
+      w: 150
+      h: 163
+    sourceSize:
+      w: 150
+      h: 163
+    pivot:
+      x: 0.5
+      y: 0.5
+  Frame_ (4).png:
+    frame:
+      x: 450
+      y: 0
+      w: 150
+      h: 163
+    rotated: false
+    trimmed: false
+    spriteSourceSize:
+      x: 0
+      y: 0
+      w: 150
+      h: 163
+    sourceSize:
+      w: 150
+      h: 163
+    pivot:
+      x: 0.5
+      y: 0.5
+  Frame_ (5).png:
+    frame:
+      x: 600
+      y: 0
+      w: 150
+      h: 163
+    rotated: false
+    trimmed: false
+    spriteSourceSize:
+      x: 0
+      y: 0
+      w: 150
+      h: 163
+    sourceSize:
+      w: 150
+      h: 163
+    pivot:
+      x: 0.5
+      y: 0.5
+  Frame_ (6).png:
+    frame:
+      x: 750
+      y: 0
+      w: 150
+      h: 163
+    rotated: false
+    trimmed: false
+    spriteSourceSize:
+      x: 0
+      y: 0
+      w: 150
+      h: 163
+    sourceSize:
+      w: 150
+      h: 163
+    pivot:
+      x: 0.5
+      y: 0.5
+  Frame_ (7).png:
+    frame:
+      x: 900
+      y: 0
+      w: 150
+      h: 163
+    rotated: false
+    trimmed: false
+    spriteSourceSize:
+      x: 0
+      y: 0
+      w: 150
+      h: 163
+    sourceSize:
+      w: 150
+      h: 163
+    pivot:
+      x: 0.5
+      y: 0.5
+  Frame_ (8).png:
+    frame:
+      x: 1050
+      y: 0
+      w: 150
+      h: 163
+    rotated: false
+    trimmed: false
+    spriteSourceSize:
+      x: 0
+      y: 0
+      w: 150
+      h: 163
+    sourceSize:
+      w: 150
+      h: 163
+    pivot:
+      x: 0.5
+      y: 0.5
+meta:
+  app: https://www.codeandweb.com/texturepacker
+  version: '1.0'
+  image: spritesheet-0.png
+  format: RGBA8888
+  size:
+    w: 1200
+    h: 163
+  scale: '1'
+  smartupdate: "$TexturePacker:SmartUpdate:3e98ddf148bd5ab2199dc608ddd882f0:d0ad364dabc4350941a2782119f1fe69:d30b70e76661441ad8f7c87bbbe07b97$"

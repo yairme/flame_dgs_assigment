@@ -16,6 +16,9 @@ dependencies:
   flame: ^1.6.0
   flame_forge2d: ^0.12.5
   flame_audio: ^1.4.0
+  flame_texturepacker: ^2.1.0
+  flame_bloc: ^1.8.2
+  equatable: ^2.0.5
   
 
 dev_dependencies:
@@ -32,3 +35,4 @@ flutter:
   assets:
     - assets/images/
     - assets/audio/
+    - assets/spriteSheet.json
