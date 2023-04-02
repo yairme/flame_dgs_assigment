@@ -70,7 +70,7 @@ class PlayerComponent extends SpriteAnimationComponent
     _rightBound = gameRef.size.x - 45;
     _leftBound = 45;
     _upBound = 45;
-    _downBound = gameRef.size.y - 50;
+    _downBound = gameRef.size.y - 45;
 
     // Add a hitbox for the player
     add(CircleHitbox());

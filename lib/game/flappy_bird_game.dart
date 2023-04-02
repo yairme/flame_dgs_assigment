@@ -8,6 +8,7 @@ import 'package:flame_dgs_assigment/components/obsticle_component.dart';
 import 'package:flame_dgs_assigment/components/player_component.dart';
 import 'package:flame_dgs_assigment/constants/globals.dart';
 import 'package:flame_dgs_assigment/inputs/joystick_component.dart';
+import 'package:flame_dgs_assigment/Decorator/decorator_component.dart';
 import 'package:flutter/material.dart';
 
 import '../BloC/flappy_bird_bloc.dart';
@@ -19,6 +20,7 @@ class FlappyBirdGame extends FlameGame
   late PlayerComponent player = PlayerComponent(joystick: joystick);
   late BackgroundComponent backgroundComponent = BackgroundComponent();
   late CornComponent corn = CornComponent();
+  late Decorator decorator = Decorator();
 
   late FlappyBirdBloc gameBloc;
 
@@ -34,6 +36,8 @@ class FlappyBirdGame extends FlameGame
     FlameAudio.bgm.play(Global.backgroundMusic);
 
     add(backgroundComponent);
+
+    add(decorator);
 
     add(corn);
 
