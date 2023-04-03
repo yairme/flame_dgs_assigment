@@ -1,6 +1,6 @@
 import 'package:flame_dgs_assigment/game/flappy_bird_game.dart';
 import 'package:flutter/material.dart';
-import '../BloC/flappy_bird_bloc.dart';
+import '../bloc/flappy_bird_bloc.dart';
 
 class GameOverMenu extends StatelessWidget {
   // Identifier for the overlay menu

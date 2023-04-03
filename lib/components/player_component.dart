@@ -4,6 +4,7 @@ import 'package:flame_audio/flame_audio.dart';
 import 'package:flame_dgs_assigment/components/obsticle_component.dart';
 import 'package:flame_dgs_assigment/constants/globals.dart';
 import 'package:flame_dgs_assigment/game/flappy_bird_game.dart';
+import 'package:flame_dgs_assigment/particles/particle_system.dart';
 import 'package:flame_texturepacker/flame_texturepacker.dart';
 
 // Define the PlayerComponent class
@@ -109,6 +110,8 @@ class PlayerComponent extends SpriteAnimationComponent
       // This boolean variable stores whether the player is moving left or not.
       bool movingLeft = joystick.relativeDelta[0] < 0;
 
+      // Get's the relative Delta of the Jostick, to apply it to the Vector2 direction.
+      Vector2 direction = joystick.relativeDelta;
       // This if-else block sets the current animation based on the direction the player is moving.
       if (movingLeft) {
         animation = animLeft;
@@ -118,6 +121,9 @@ class PlayerComponent extends SpriteAnimationComponent
 
       // This line updates the player's position based on joystick input, speed, and the elapsed time since the last frame.
       position += joystick.relativeDelta * _speed * dt;
+
+      // Creates a ParticleSystemComponet where it has a MovingParticle that moves a CircleParticle that is created here.
+      gameRef.add(MyParticleSystem().myParticleSystem(position, direction));
     } else {
       // If the player is in a hit stun state, update the stun timer.
       _timer.update(dt);

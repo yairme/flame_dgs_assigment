@@ -2,7 +2,7 @@ import 'dart:math';
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame_audio/flame_audio.dart';
-import 'package:flame_dgs_assigment/BloC/flappy_bird_bloc.dart';
+import 'package:flame_dgs_assigment/bloc/flappy_bird_bloc.dart';
 import 'package:flame_dgs_assigment/components/player_component.dart';
 import 'package:flame_dgs_assigment/constants/globals.dart';
 import 'package:flame_dgs_assigment/game/flappy_bird_game.dart';

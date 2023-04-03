@@ -8,10 +8,10 @@ import 'package:flame_dgs_assigment/components/obsticle_component.dart';
 import 'package:flame_dgs_assigment/components/player_component.dart';
 import 'package:flame_dgs_assigment/constants/globals.dart';
 import 'package:flame_dgs_assigment/inputs/joystick_component.dart';
-import 'package:flame_dgs_assigment/Decorator/decorator_component.dart';
+import 'package:flame_dgs_assigment/decorator/decorator_component.dart';
 import 'package:flutter/material.dart';
 
-import '../BloC/flappy_bird_bloc.dart';
+import '../bloc/flappy_bird_bloc.dart';
 import '../screens/game_over_menu.dart';
 
 /// A class representing the main game logic and components of the Flappy Bird game.

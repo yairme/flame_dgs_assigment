@@ -15,6 +15,5 @@ class Global {
   static const String gameOver = 'die.mp3';
 
   static const String spriteSheet = 'spritesheet-0.png';
-  static const String spriteSheetYaml = 'spriteSheet.yaml';
   static const String spriteSheetJson = 'spriteSheet.json';
 }
