@@ -4,7 +4,7 @@ import 'package:flame/effects.dart';
 import 'package:flame_audio/flame_audio.dart';
 import 'package:flame_dgs_assigment/components/obsticle_component.dart';
 import 'package:flame_dgs_assigment/constants/globals.dart';
-import 'package:flame_dgs_assigment/game/flappy_bird_game.dart';
+import 'package:flame_dgs_assigment/flappy_bird_game.dart';
 import 'package:flame_dgs_assigment/particles/particle_system.dart';
 import 'package:flame_texturepacker/flame_texturepacker.dart';
 import 'package:flutter/material.dart';

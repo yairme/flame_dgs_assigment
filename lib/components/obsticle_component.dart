@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame_dgs_assigment/constants/globals.dart';
-import 'package:flame_dgs_assigment/game/flappy_bird_game.dart';
+import 'package:flame_dgs_assigment/flappy_bird_game.dart';
 import 'dart:math' as math;
 
 class ObsticleComponent extends SpriteComponent

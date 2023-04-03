@@ -1,4 +1,4 @@
-import 'package:flame_dgs_assigment/screens/main_menu.dart';
+import 'package:flame_dgs_assigment/pages/main_menu.dart';
 import 'package:flutter/material.dart';
 
 void main() {

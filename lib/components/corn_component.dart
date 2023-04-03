@@ -5,7 +5,7 @@ import 'package:flame_audio/flame_audio.dart';
 import 'package:flame_dgs_assigment/bloc/flappy_bird_bloc.dart';
 import 'package:flame_dgs_assigment/components/player_component.dart';
 import 'package:flame_dgs_assigment/constants/globals.dart';
-import 'package:flame_dgs_assigment/game/flappy_bird_game.dart';
+import 'package:flame_dgs_assigment/flappy_bird_game.dart';
 
 class CornComponent extends SpriteComponent
     with HasGameRef<FlappyBirdGame>, CollisionCallbacks {

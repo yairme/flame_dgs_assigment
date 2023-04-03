@@ -1,7 +1,7 @@
 // ignore: depend_on_referenced_packages
 import 'package:bloc/bloc.dart'; // Import the bloc package
 import 'dart:async'; // Import the async package
-import 'package:flame_dgs_assigment/state/flappy_bird_state.dart'; // Import the flappy bird state class
+import 'package:flame_dgs_assigment/bloc/flappy_bird_state.dart'; // Import the flappy bird state class
 
 // Define an abstract class for Flappy Bird events
 abstract class FlappyBirdEvent {}

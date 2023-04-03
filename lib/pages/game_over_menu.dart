@@ -1,4 +1,4 @@
-import 'package:flame_dgs_assigment/game/flappy_bird_game.dart';
+import 'package:flame_dgs_assigment/flappy_bird_game.dart';
 import 'package:flutter/material.dart';
 import '../bloc/flappy_bird_bloc.dart';
 

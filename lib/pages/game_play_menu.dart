@@ -1,6 +1,6 @@
 import 'package:flame/game.dart';
-import 'package:flame_dgs_assigment/game/flappy_bird_game.dart';
-import 'package:flame_dgs_assigment/screens/game_over_menu.dart';
+import 'package:flame_dgs_assigment/flappy_bird_game.dart';
+import 'package:flame_dgs_assigment/pages/game_over_menu.dart';
 import 'package:flutter/widgets.dart';
 
 // Instantiate a new instance of the FlappyBirdGame class

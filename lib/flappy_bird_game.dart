@@ -12,7 +12,7 @@ import 'package:flame_dgs_assigment/decorator/decorator_component.dart';
 import 'package:flutter/material.dart';
 
 import '../bloc/flappy_bird_bloc.dart';
-import '../screens/game_over_menu.dart';
+import 'pages/game_over_menu.dart';
 
 /// A class representing the main game logic and components of the Flappy Bird game.
 class FlappyBirdGame extends FlameGame
