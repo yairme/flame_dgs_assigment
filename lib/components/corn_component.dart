@@ -57,13 +57,6 @@ class CornComponent extends SpriteComponent
     }
   }
 
-  // It's an Update Function;
-  @override
-  void update(dt) {
-    super.update(dt);
-    size += Vector2(2, 2) * dt; // Updates the size of the corn;
-  }
-
   // Generates a random position for the corn component within the game screen
   Vector2 _getRandomPosition() {
     double x = _random.nextInt(gameRef.size.x.toInt()).toDouble();
