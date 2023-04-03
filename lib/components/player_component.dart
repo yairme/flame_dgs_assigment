@@ -1,5 +1,6 @@
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
+import 'package:flame/effects.dart';
 import 'package:flame_audio/flame_audio.dart';
 import 'package:flame_dgs_assigment/components/obsticle_component.dart';
 import 'package:flame_dgs_assigment/constants/globals.dart';
@@ -82,9 +83,8 @@ class PlayerComponent extends SpriteAnimationComponent
   @override
   void update(dt) {
     super.update(dt);
-
     // If the player is not stunned, handle joystick input for movement and animation
-// This if statement checks if the player is not in a hit stun state and if so, handles joystick input for movement and animation.
+    // This if statement checks if the player is not in a hit stun state and if so, handles joystick input for movement and animation.
     if (!_hitStun) {
       if (joystick.direction == JoystickDirection.idle) {
         animation = animRight;
@@ -149,6 +149,14 @@ class PlayerComponent extends SpriteAnimationComponent
   void _unStunPlayer() {
     _hitStun = false;
     animation = animRight;
+
+    add(
+      ColorEffect(
+        const Color.fromARGB(0, 255, 255, 255),
+        const Offset(0.0, 0.0),
+        EffectController(duration: 1.5),
+      ),
+    );
   }
 
 // This method stuns the player by setting the hit stun flag to true, changing the animation to the stun state, and starting the stun timer.
@@ -160,6 +168,14 @@ class PlayerComponent extends SpriteAnimationComponent
       _hitStun = true;
 
       animation = stunAnim;
+
+      add(
+        ColorEffect(
+          const Color.fromARGB(255, 255, 0, 0),
+          const Offset(0.0, 0.4),
+          EffectController(duration: 1.5),
+        ),
+      );
 
       _timer.start();
     }
