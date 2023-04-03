@@ -6,6 +6,7 @@ import 'package:flame_dgs_assigment/constants/globals.dart';
 import 'package:flame_dgs_assigment/game/flappy_bird_game.dart';
 import 'package:flame_dgs_assigment/particles/particle_system.dart';
 import 'package:flame_texturepacker/flame_texturepacker.dart';
+import 'package:flutter/material.dart';
 
 // Define the PlayerComponent class
 class PlayerComponent extends SpriteAnimationComponent
@@ -123,7 +124,8 @@ class PlayerComponent extends SpriteAnimationComponent
       position += joystick.relativeDelta * _speed * dt;
 
       // Creates a ParticleSystemComponet where it has a MovingParticle that moves a CircleParticle that is created here.
-      gameRef.add(MyParticleSystem().myParticleSystem(position, direction));
+      gameRef.add(MyParticleSystem()
+          .circleParticle(position, direction, Paint()..color = Colors.black));
     } else {
       // If the player is in a hit stun state, update the stun timer.
       _timer.update(dt);

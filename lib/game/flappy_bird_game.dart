@@ -108,4 +108,17 @@ class FlappyBirdGame extends FlameGame
     // Start the game by adding a StartGameEvent to the game
     gameBloc.add(StartGameEvent());
   }
+
+  @override
+  void update(dt) {
+    super.update(dt);
+
+    final defaultSize = corn.size;
+
+    if (corn.size.x < defaultSize.x + 10) {
+      corn.size += Vector2(1, 1) * dt;
+    } else {
+      corn.size = defaultSize;
+    }
+  }
 }
